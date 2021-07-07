@@ -90,10 +90,10 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;%(AdditionalIncludeDirectories);C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;%(AdditionalIncludeDirectories);C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -108,9 +108,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_HUNTER_DLL_BUILD</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -126,9 +126,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -144,9 +144,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_HUNTER_DLL_BUILD</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -159,15 +159,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\Header.h" />
     <ClInclude Include="include\Hunter.h" />
     <ClInclude Include="include\HunterApp.h" />
     <ClInclude Include="include\HunterCentral.h" />
     <ClInclude Include="include\pch.h" />
+    <ClInclude Include="include\Window.h" />
+    <ClInclude Include="include\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\HunterApp.cpp" />
     <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\Windows\WindowsWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\glad\glad.vcxproj">
+      <Project>{f2576271-64d1-464c-94b4-fefe54833ecf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\glfw\build\src\glfw.vcxproj">
+      <Project>{94592b79-8e96-3a7d-82cb-64a46e9bbb1b}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
