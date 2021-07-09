@@ -93,7 +93,7 @@
       <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;%(AdditionalIncludeDirectories);C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\OpenGL;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;%(AdditionalIncludeDirectories);C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -110,7 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\OpenGL;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\OpenGL;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -146,7 +146,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_HUNTER_DLL_BUILD;_HUNTER_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include\OpenGL;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include\Windows;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\glfw\include;;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -162,12 +162,15 @@
     <ClInclude Include="include\Hunter.h" />
     <ClInclude Include="include\HunterApp.h" />
     <ClInclude Include="include\HunterCentral.h" />
+    <ClInclude Include="include\OpenGL\OpenGLShader.h" />
     <ClInclude Include="include\pch.h" />
+    <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\Window.h" />
     <ClInclude Include="include\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\HunterApp.cpp" />
+    <ClCompile Include="src\OpenGL\OpenGLShader.cpp" />
     <ClCompile Include="src\pch.cpp" />
     <ClCompile Include="src\Windows\WindowsWindow.cpp" />
   </ItemGroup>
