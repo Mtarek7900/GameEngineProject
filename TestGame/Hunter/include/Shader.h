@@ -12,5 +12,6 @@ namespace Hunter
 		virtual void Use() = 0;
 
 		virtual void SetVec2Int(const std::string& uniformName, int val1, int val2) = 0;
+		virtual ~Shader() = 0 {};
 	};
 }

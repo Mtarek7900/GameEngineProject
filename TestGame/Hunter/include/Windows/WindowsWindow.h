@@ -4,8 +4,8 @@
 #include "Window.h"
 
 #define GLFW_INCLUDE_NONE
-#include "glfw\glfw3.h"
-#include "glad\glad.h"
+#include "glfw/glfw3.h"
+#include "glad/glad.h"
 
 
 
@@ -18,6 +18,8 @@ namespace Hunter
 		virtual void DeleteWindow() override;
 		virtual void SwapBufferes() override;
 		virtual void PollForEvent() override;
+		virtual int GetWidth() const override;
+		virtual int GetHeight() const override;
 
 	private:
 		GLFWwindow* window;
