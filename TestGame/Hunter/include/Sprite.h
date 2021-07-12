@@ -5,7 +5,7 @@
 
 namespace Hunter
 {
-	class	HUNTER_API Sprite
+	class HUNTER_API Sprite
 	{
 	public:
 		Sprite(const std::string& spriteFile);
@@ -14,6 +14,11 @@ namespace Hunter
 		int GetHeight() const;
 		const unsigned char * GetImagePointer() const;
 		~Sprite();
+
+		Sprite(const Sprite& other) = delete;
+		Sprite(Sprite&& other) = delete;
+		Sprite& operator=(const Sprite& other) = delete;
+		Sprite& operator=(Sprite&& other) = delete;
 
 	private:
 		unsigned char* mImage{ nullptr };

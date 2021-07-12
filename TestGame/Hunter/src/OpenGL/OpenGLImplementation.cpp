@@ -59,6 +59,12 @@ namespace Hunter
 
 	}
 
+	void OpenGLImplementation::ClearFrame()
+	{
+		glClearColor(0.0, 0.0, 0.0, 1.0);
+		glClear(GL_COLOR_BUFFER_BIT);
+	}
+
 	OpenGLImplementation::~OpenGLImplementation() 
 	{
 

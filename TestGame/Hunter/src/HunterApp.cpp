@@ -1,25 +1,26 @@
 #include <pch.h>
 #include "HunterApp.h"
-#include "WindowsWindow.h"
+#include "Windows/WindowsWindow.h"
 #include "Renderer.h"
 #include "Sprite.h"
+#include "HunterKeys.h"
+
 
 namespace Hunter 
 {
 	void HunterApp::RunGame()
 	{
-		HLOG("Start the game")
+		HLOG("Start the game");
 
 		Renderer::Init();
-
-		Sprite test1{"../Hunter/assets/sprites/Sprite2.png"};
-		
 			
 		while (true)
 		{
-			Renderer::Draw(test1, 100, 100, test1.GetWidth(), test1.GetHeight());
+			Renderer::ClearFrame();
 
-			appWindow->SwapBufferes();
+			OnUpdate();
+
+			appWindow->SwapBuffers();
 			appWindow->PollForEvent();
 		}
 	}
@@ -29,15 +30,12 @@ namespace Hunter
 		return instance;
 	}
 
-	void HunterApp::Init()
-	{
-		if (instance == nullptr)
-			instance = new HunterApp;
-	}
 
 	HunterApp::HunterApp() 
 	{
 		assert(instance == nullptr);
+
+		instance = this;
 
 #ifdef _HUNTER_WINDOWS
 		appWindow = new WindowsWindow;
@@ -46,14 +44,21 @@ namespace Hunter
 #endif
 
 		
-		appWindow = new WindowsWindow;
-		bool success{ appWindow->CreateWindow(800, 600) };
+		//appWindow = new WindowsWindow;
+		bool success{ appWindow->CreateWindow(800, 800) };
 		assert(success);
+
+		appWindow->SetKeyPressedCallback([this](KeyPressedEvent& event) {OnKeyPressed(event); });
 	}
 
 	HunterApp::~HunterApp()
 	{
 		appWindow->DeleteWindow();
+	}
+
+	void HunterApp::OnUpdate()
+	{
+
 	}
 
 	int HunterApp::GetWindowWidth() 
@@ -64,5 +69,10 @@ namespace Hunter
 	int HunterApp::GetWindowHeight() 
 	{
 		return instance->appWindow->GetHeight();
+	}
+
+	void HunterApp::OnKeyPressed(KeyPressedEvent& event)
+	{
+		
 	}
 }

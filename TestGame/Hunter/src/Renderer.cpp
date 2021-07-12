@@ -7,7 +7,9 @@ namespace Hunter
 	void Renderer::Init()
 	{
 		if (instance == nullptr)
+		{
 			instance = new Renderer;
+		}
 	}
 
 
@@ -25,6 +27,11 @@ namespace Hunter
 		assert(instance != nullptr);
 
 		instance->mDrawingEngine->Draw(image, x_pos, y_pos, width, height);
+	}
+
+	void Renderer::ClearFrame()
+	{
+		instance->mDrawingEngine->ClearFrame();
 	}
 
 
