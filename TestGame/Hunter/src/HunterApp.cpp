@@ -52,6 +52,7 @@ namespace Hunter
 		assert(success);
 
 		appWindow->SetKeyPressedCallback([this](KeyPressedEvent& event) {OnKeyPressed(event); });
+		appWindow->SetKeyReleasedCallback([this](KeyReleasedEvent& event) {OnKeyReleased(event); });
 	}
 
 	HunterApp::~HunterApp()
@@ -77,5 +78,9 @@ namespace Hunter
 	void HunterApp::OnKeyPressed(KeyPressedEvent& event)
 	{
 		
+	}
+	void HunterApp::OnKeyReleased(KeyReleasedEvent& event)
+	{
+
 	}
 }

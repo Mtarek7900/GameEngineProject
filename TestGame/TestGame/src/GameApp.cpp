@@ -20,7 +20,7 @@ void GameApp::OnUpdate()
 		return;
 	}
 
-	if (mFrameNumber % 15 == 0)
+	if (mFrameNumber % 30 == 0)
 	{
 		std::string planetType{ "assets/planet" + std::to_string((rand() % 5 + 1)) + ".png" };
 		mPlanets.emplace_back(planetType, 10);
@@ -78,4 +78,13 @@ void GameApp::OnKeyPressed(Hunter::KeyPressedEvent& event)
 	{
 		mSpaceshipAction = Action::RightMove;
 	}
+}
+
+void GameApp::OnKeyReleased(Hunter::KeyReleasedEvent& event)
+{
+	if (event.GetKeyCode() == HUNTER_KEY_LEFT || event.GetKeyCode() == HUNTER_KEY_RIGHT)
+	{
+		mSpaceshipAction = Action::Forward;
+	}
+
 }

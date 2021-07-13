@@ -10,6 +10,8 @@ public:
 
 	virtual void OnUpdate() override;
 	virtual void OnKeyPressed(Hunter::KeyPressedEvent& event) override;
+	virtual void OnKeyReleased(Hunter::KeyReleasedEvent& event) override;
+
 
 
 private:
