@@ -15,6 +15,8 @@ public:
 private:
 	Unit mSpaceship;
 	std::deque<Unit> mPlanets;
+	Hunter::Sprite mEndNotice;
+	Hunter::Sprite mBackground;
 
 	enum class Action
 	{
@@ -22,4 +24,8 @@ private:
 		RightMove,
 		Forward,	
 	} mSpaceshipAction;
+
+
+	bool mGameEnd;
+	long long mFrameNumber;
 };

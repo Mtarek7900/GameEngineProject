@@ -57,6 +57,9 @@ namespace Hunter
 
 		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 
+		glDeleteTextures(1, &picture);
+		glDeleteBuffers(1, &VBO);
+		glDeleteVertexArrays(1, &VAO);
 	}
 
 	void OpenGLImplementation::ClearFrame()

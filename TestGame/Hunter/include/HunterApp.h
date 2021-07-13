@@ -28,7 +28,7 @@ namespace Hunter
 		Hunter::Window* appWindow{ nullptr };
 
 		std::chrono::steady_clock::time_point mNextFrameTime;
-		std::chrono::milliseconds mFrameDuration{ 16 };
+		std::chrono::milliseconds mFrameDuration{ 30 };
 	};
 }
 
