@@ -2,7 +2,7 @@
 #include "HunterCentral.h"
 #include "Window.h"
 #include "KeyboardEvents.h"
-
+#include "pch.h"
 namespace Hunter
 {
 	class HUNTER_API HunterApp
@@ -17,7 +17,7 @@ namespace Hunter
 		static int GetWindowWidth();
 		static int GetWindowHeight();
 
-		void OnKeyPressed(KeyPressedEvent& event);
+		virtual void OnKeyPressed(KeyPressedEvent& event);
 	
 	protected:	
 		HunterApp();
@@ -27,6 +27,8 @@ namespace Hunter
 		
 		Hunter::Window* appWindow{ nullptr };
 
+		std::chrono::steady_clock::time_point mNextFrameTime;
+		std::chrono::milliseconds mFrameDuration{ 16 };
 	};
 }
 

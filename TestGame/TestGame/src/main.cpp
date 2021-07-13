@@ -1,9 +1,7 @@
-#include<Hunter.h>
+#include <Hunter.h>
+#include "GameApp.h"
 
-class GameApp : public Hunter::HunterApp
-{
-
-};
 
 START_GAME(GameApp)
+
 

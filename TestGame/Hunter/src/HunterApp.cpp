@@ -1,27 +1,33 @@
-#include <pch.h>
+#include "pch.h"
 #include "HunterApp.h"
 #include "Windows/WindowsWindow.h"
 #include "Renderer.h"
 #include "Sprite.h"
 #include "HunterKeys.h"
 
-
 namespace Hunter 
 {
 	void HunterApp::RunGame()
 	{
-		HLOG("Start the game");
+		HLOG("Starting the game");
 
 		Renderer::Init();
-			
+
+		mNextFrameTime = std::chrono::steady_clock::now() + mFrameDuration;
+		
+
 		while (true)
 		{
 			Renderer::ClearFrame();
 
 			OnUpdate();
 
+			std::this_thread::sleep_until(mNextFrameTime);
+
 			appWindow->SwapBuffers();
 			appWindow->PollForEvent();
+
+			mNextFrameTime += mFrameDuration;
 		}
 	}
 
@@ -29,7 +35,6 @@ namespace Hunter
 	{
 		return instance;
 	}
-
 
 	HunterApp::HunterApp() 
 	{
@@ -43,8 +48,6 @@ namespace Hunter
 	#Only_Windows_supported_for_now
 #endif
 
-		
-		//appWindow = new WindowsWindow;
 		bool success{ appWindow->CreateWindow(800, 800) };
 		assert(success);
 

@@ -28,8 +28,6 @@ namespace Hunter
 				callbacks->KeyPressedCallback(event);
 			}
 			
-			
-			
 			});
 		
 		return true;

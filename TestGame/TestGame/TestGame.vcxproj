@@ -93,7 +93,8 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -109,7 +110,8 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +127,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,7 +144,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngine\TestGame\Hunter\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glad\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\glfw\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\TestGame\include;C:\Users\hamim\Desktop\Code\GameEngineProject\TestGame\Hunter\include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,7 +160,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\GameApp.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Unit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\GameApp.h" />
+    <ClInclude Include="include\Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
