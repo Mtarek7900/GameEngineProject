@@ -15,6 +15,8 @@ namespace Hunter
 
 	bool Sprite::Load(const std::string& spriteFile)
 	{
+		//flips image since it gets inverted, opengl reads from bottemleft corner
+		stbi_set_flip_vertically_on_load(1);
 		mImage = stbi_load(spriteFile.c_str(), &mWidth, &mHeight, &mNumChannels, 0);
 
 		if (mImage)

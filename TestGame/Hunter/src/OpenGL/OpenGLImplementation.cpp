@@ -27,8 +27,7 @@ namespace Hunter
 			(float)x_pos,			(float) y_pos,				0.0f, 0.0f,
 			(float)x_pos,			(float)(y_pos + height),	0.0f, 1.0f,
 			(float)(x_pos + width),	(float) y_pos,				1.0f, 0.0f,
-			(float)(x_pos + width),	(float)(y_pos + height),	1.0f, 1.0f
-			
+			(float)(x_pos + width),	(float)(y_pos + height),	1.0f, 1.0f,	
 		};
 
 		unsigned int VBO, VAO;
